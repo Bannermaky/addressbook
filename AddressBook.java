@@ -3,27 +3,17 @@ import java.util.Scanner;
 
 public class AddressBook {
 
-    private Contact[] friends; // An array of Contacts - each stores info for one friend
-    private int numfriends; // Number of friends currently in AddressBook
+private Contact[] friends; // An array of Contacts - each stores info for one friend
+private int numfriends; // Number of friends currently in AddressBook
 
-    // Create an empty AddressBook
-    public AddressBook() {
-		friends = new Contact[10];
-		numfriends = 0;
-    }
-
+//Create an empty AddressBook
+public AddressBook() {
+	friends = new Contact[10];
 	numfriends = 0;
-    }
+}
 
-//create a method to add a a contact that's passed as para
-	public void addContact(Contact c) {
-		friends[numfriends] = c;
-		numFriends++;
-	}
-
-// print infor on all contacts
-	public void printContacts() {
-		for (Contact cc: AddressBook)
-			friends[cc].printContact();
-
-	
+//Add a contact passed in as a paramter 
+public void addContact(Contact c){
+	friends[numfriends] = c;
+	numfriends++;
+}
